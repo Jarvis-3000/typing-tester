@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container
+        {
+            width:500px;
+            height:auto;
+            margin:auto;
+            border:1px solid gray;
+            padding:20px 50px 50px 50px;
+            box-sizing:border-box;
+            border-radius: 10px;
+            background-color: darkgrey;
+        }
+        .heading{
+            font-family: cursive;
+            text-align: center;
+        }
+
+        .text
+        {
+            border-bottom:1px solid  black;
+            padding:10px;
+            font-size:20px;
+            color:brown;
+        }
+
+        .tester
+        {
+            border:2px solid ;
+            height: 200px;
+            padding:10px;
+            background-color: rgb(111, 183, 245);            
+        }
+
+        textarea{
+            border:none;
+            background-color:rgba(0,0,0,0);
+            outline:none;
+            min-width:100%;
+            max-width:100%;
+            min-height: 100%;
+            max-height:100%;
+            font-size: 20px;
+        }
+
+        .time{
+            padding:10px;
+            border-bottom:2px solid;
+               font-size: 20px;
+        }
+
+        #start{
+            padding:10px 30px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading"><h1>Typing Tester</h1><br></div>
+        <div class="text">Lorem ipsum is an awesome flower ! </div>
+        <div class="tester">
+            <textarea id="area" name="textarea" rows="6" placeholder="The clock start when you press any key"></textarea>
+        </div>
+        <div class="time">Total Seconds:<span id="total"></span>
+        <p>Total Correct=<span></span></p>
+        </div><br>
+        <div>
+            <button id="start" onclick="reload()">Start Over</button>
+        </div>
+    </div>
+        <script src="index.js"></script>
+</body>
+</html>
